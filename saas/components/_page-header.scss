@@ -1,0 +1,166 @@
+// .container {
+//   &.navigation {
+//     // display: flex;
+//     // align-items: center;
+//   }
+// }
+
+.navigation {
+  .link.current {
+    color: $accent-color;
+  }
+}
+
+.item {
+  &.studio {
+    position: relative;
+  }
+}
+
+.link {
+  &.current::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 47px;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 4px;
+  }
+}
+
+.item {
+  &.portfolio {
+    position: relative;
+  }
+}
+
+.link.current {
+  &.portfolio::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 77px;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 4px;
+  }
+}
+
+// .navigation {
+//   // display: flex;
+// }
+
+.site-nav {
+  .link {
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $title-text-color;
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.site-nav {
+  .link:hover,
+  .link:focus {
+    color: $accent-color;
+  }
+}
+
+.site-nav {
+  // display: flex;
+  margin-left: 80px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  list-style: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav {
+  .item.studio {
+    margin-right: 45px;
+  }
+}
+
+.site-nav {
+  .item.portfolio {
+    margin-right: 50px;
+  }
+}
+
+.contact-nav {
+  // display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding: 0px;
+  // align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+
+// .contact-nav {
+//   .link {
+//     // align-items: center;
+//   }
+// }
+
+.contact-nav {
+  .item.mail {
+    // display: flex;
+    margin-right: 30px;
+    // align-items: center;
+  }
+}
+
+// .contact-nav {
+//   .item.phone {
+//     // display: flex;
+//   }
+// }
+
+.mail-icon {
+  width: 16px;
+  height: 11px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.phone-icon {
+  width: 10px;
+  height: 15px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contact-nav {
+  .link {
+    // display: flex;
+    color: $primaty-text-color;
+    text-decoration: none;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.contact-nav {
+  .link:hover,
+  .link:focus {
+    color: $accent-color;
+  }
+}
