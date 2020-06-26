@@ -16,40 +16,66 @@
   </head>
   <body>
     <!-- Хедер -->
-    <header>
+    <header class="page-header">
       <div class="container navigation">
         <nav class="navigation">
           <a href="" class="logo">
             Web <span class="logo-studio">Studio</span></a
           >
-          <ul class="site-nav">
-            <li class="item studio">
-              <a href="./index.html" class="link current">Студия</a>
-            </li>
-            <li class="item portfolio">
-              <a href="./portfolio.html" class="link">Портфолио</a>
-            </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
-          </ul>
+          <div class="menu-navigation" data-menu id="menu-navigation">
+            <ul class="site-nav">
+              <li class="item studio">
+                <a href="./index.html" class="link current">Студия</a>
+              </li>
+              <li class="item portfolio">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="item contacts">
+                <a href="" class="link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="contact-nav">
+              <li class="item mail">
+                <a href="mailto:info@devstudio.com" class="link">
+                  <svg class="mail-icon">
+                    <use href="./images/sprite.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="item phone">
+                <a href="tel:+380961111111" class="link">
+                  <svg class="phone-icon">
+                    <use href="./images/sprite.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-navigation"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-close"
+                href="./images/sprite.svg#close_menu"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/sprite.svg#menu_lines"
+              ></use>
+            </svg>
+          </button>
         </nav>
-        <ul class="contact-nav">
-          <li class="item mail">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="mail-icon">
-                <use href="./images/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="item phone">
-            <a href="tel:+380961111111" class="link">
-              <svg class="phone-icon">
-                <use href="./images/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -331,42 +357,42 @@
         <div class="container">
           <h2 class="section-title clients">Постоянные клиенты</h2>
           <ul class="client-list">
-            <li>
+            <li class="item">
               <a href="" class="client-image">
                 <svg class="client-icon" width="44" height="49">
                   <use href="./images/sprite.svg#logo1"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="client-image">
                 <svg class="client-icon" width="40" height="52">
                   <use href="./images/sprite.svg#logo2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="client-image">
                 <svg class="client-icon" width="41" height="43">
                   <use href="./images/sprite.svg#logo3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="client-image">
                 <svg class="client-icon" width="80" height="42">
                   <use href="./images/sprite.svg#logo4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="client-image">
                 <svg class="client-icon" width="59" height="47">
                   <use href="./images/sprite.svg#logo5"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="client-image">
                 <svg class="client-icon" width="88" height="45">
                   <use href="./images/sprite.svg#logo6"></use>
@@ -547,6 +573,7 @@
       refs.backdrop.addEventListener("click", logBackdropClick);
 
       function toggleModal() {
+        document.body.classList.toggle("modal-open");
         refs.backdrop.classList.toggle("is-hidden");
       }
 
@@ -570,6 +597,25 @@
 
             e.currentTarget.reset();
           });
+      })();
+    </script>
+
+    <!-- скрипт для меню на мобилке -->
+
+    <script>
+      (() => {
+        const menuBtnRef = document.querySelector("[data-menu-button]");
+        const mobileMenuRef = document.querySelector("[data-menu]");
+
+        menuBtnRef.addEventListener("click", () => {
+          const expanded =
+            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+          menuBtnRef.classList.toggle("is-open");
+          menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+          mobileMenuRef.classList.toggle("is-open");
+        });
       })();
     </script>
   </body>

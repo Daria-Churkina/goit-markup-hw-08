@@ -54,7 +54,7 @@
 
 .social-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -66,8 +66,8 @@
   height: 44px;
   color: $social-color;
   background-color: $white-color;
-  // align-items: center;
-  // justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
