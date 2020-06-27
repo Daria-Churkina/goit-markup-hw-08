@@ -1,8 +1,4 @@
 .backdrop {
-  padding-top: 93px;
-  padding-bottom: 94px;
-  padding-right: 15px;
-  padding-left: 15px;
   overflow-y: scroll;
 
   position: fixed;
@@ -14,6 +10,12 @@
 
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 767px) {
+    padding-top: 93px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .backdrop {
