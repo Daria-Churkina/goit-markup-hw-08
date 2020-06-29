@@ -1151,6 +1151,7 @@ footer {
     margin: 0px;
     padding: 0px;
     list-style: none;
+    margin: -15px;
   }
 }
 
@@ -1697,7 +1698,6 @@ body.modal-open {
 /* projects */
 .project-list {
   display: block;
-  width: 100%;
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -1710,6 +1710,10 @@ body.modal-open {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin: -15px;
   }
 }
 
@@ -1720,6 +1724,10 @@ body.modal-open {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin: -15px;
   }
 }
 
@@ -1763,6 +1771,20 @@ body.modal-open {
 .project-list .project-image {
   display: block;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .project-list .project-image {
+    width: 354px;
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-list .project-image {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .project.element:hover, .project.element:focus {
@@ -1822,20 +1844,6 @@ body.modal-open {
   width: 100%;
   position: relative;
   overflow: hidden;
-}
-
-@media screen and (min-width: 480px) {
-  .project-thumb {
-    width: 450px;
-    height: 294px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .project-thumb {
-    width: 354px;
-    height: 294px;
-  }
 }
 
 .project-overlay {

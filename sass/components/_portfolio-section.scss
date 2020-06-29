@@ -75,7 +75,6 @@
 
 .project-list {
   display: block;
-  width: 100%;
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -83,11 +82,19 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin: -15px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin: -15px;
   }
 }
 
@@ -130,6 +137,16 @@
   .project-image {
     display: block;
     width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 294px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      height: 294px;
+    }
   }
 }
 
@@ -151,6 +168,10 @@
     border-bottom: 1px solid $card-content-border-color;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+
+    // @media screen and (min-width: 768px) {
+    //   width: 354px;
+    // }
   }
 }
 
@@ -205,15 +226,15 @@
   position: relative;
   overflow: hidden;
 
-  @media screen and (min-width: 480px) {
-    width: 450px;
-    height: 294px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   width: 450px;
+  //   height: 294px;
+  // }
 
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 294px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   width: 354px;
+  //   height: 294px;
+  // }
 }
 
 .project-overlay {

@@ -158,17 +158,26 @@
                     ./images/desktop/deskapp2x.webp 2x
                   "
                   type="image/webp"
+                  media="(min-width: 769px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
-
+                <source
+                  srcset="
+                    ./images/desktop/deskapp.jpg 1x,
+                    ./images/desktop/deskapp.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 769px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
                 <img
                   srcset="
                     ./images/desktop/deskapp.jpg   1x,
                     ./images/desktop/deskapp2x.jpg 2x
                   "
                   src="./images/desktop/deskapp.jpg"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   alt="Изображение ноутбука"
-                  width="370"
-                  height="294"
                 />
               </picture>
 
@@ -184,17 +193,26 @@
                     ./images/desktop/mobapp2x.webp 2x
                   "
                   type="image/webp"
+                  media="(min-width: 769px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
-
+                <source
+                  srcset="
+                    ./images/desktop/mobapp.jpg 1x,
+                    ./images/desktop/mobapp.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 769px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
                 <img
                   srcset="
                     ./images/desktop/mobapp.jpg   1x,
                     ./images/desktop/mobapp2x.jpg 2x
                   "
-                  src="./images/desktop/deskapp.jpg"
+                  src="./images/desktop/mobapp.jpg"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   alt="Изображение смартфона"
-                  width="370"
-                  height="294"
                 />
               </picture>
               <a href="">
@@ -209,17 +227,26 @@
                     ./images/desktop/design2x.webp 2x
                   "
                   type="image/webp"
+                  media="(min-width: 769px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
-
+                <source
+                  srcset="
+                    ./images/desktop/design.jpg 1x,
+                    ./images/desktop/design.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 769px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
                 <img
                   srcset="
                     ./images/desktop/design.jpg   1x,
                     ./images/desktop/design2x.jpg 2x
                   "
                   src="./images/desktop/design.jpg"
-                  alt="Изображение смартфона"
-                  width="370"
-                  height="294"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  alt="Изображение монитора"
                 />
               </picture>
               <a href="">
@@ -275,7 +302,7 @@
                 />
                 <source
                   srcset="
-                    ./images/destop/kucherenko.webp    1x,
+                    ./images/desktop/kucherenko.webp   1x,
                     ./images/desktop/kucherenko2x.webp 2x
                   "
                   type="image/webp"
@@ -305,40 +332,6 @@
                   alt="фотография члена команды"
                 />
               </picture>
-              <!-- <picture>
-                <source
-                  srcset="
-                     ./images/mobile/kucherenko.webp 1x,
-                     ./images/mobile/kucherenko2x.webp 2x,
-                     ./images/tablet/kucherenko.webp 1x,
-                     ./images/tablet/kucherenko2x.webp 2x,
-                     ./images/desktop/kucherenko.webp 2x
-                     ./images/desktop/kucherenko2x.webp 2x
-                   "
-                  type="image/webp"
-                />
-
-                <img
-                  class="team-image"
-                  srcset="
-                    ./images/mobile/kucherenko.jpg    1x,
-                    ./images/mobile/kucherenko2x.jpg  2x,
-                    ./images/tablet/kucherenko.jpg    1x,
-                    ./images/tablet/kucherenko2x.jpg  2x,
-                    ./images/desktop/kucherenko.jpg   1x,
-                    ./images/desktop/kucherenko2x.jpg 2x,
-
-                  "
-                  src="./images/mobile/kucherenko.jpg"
-                  alt="фотография члена команды"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw"
-                />
-              </picture> -->
-              <!-- <img
-                class="team-image"
-                src="./images/kucherenko.jpg"
-                alt="фотография члена команды"
-              /> -->
               <h3 class="team-title">Николай Кучеренко</h3>
               <p class="text">Product Designer</p>
               <ul class="social-list">
@@ -376,18 +369,59 @@
               <picture>
                 <source
                   srcset="
-                    ./images/mobile/ivanova.webp    1x,
-                    ./images/mobile/ivanova2x.webp  2x,
-                    ./images/tablet/ivanova.webp    1x,
-                    ./images/tablet/ivanova2x.webp  2x,
+                    ./images/mobile/ivanova.webp   1x,
+                    ./images/mobile/ivanova2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 480px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/ivanova.jpg   1x,
+                    ./images/mobile/ivanova2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 480px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/ivanova.webp   1x,
+                    ./images/tablet/ivanova2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 768px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/ivanova.jpg 1x,
+                    ./images/tablet/ivanova.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 768px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
                     ./images/desktop/ivanova.webp   1x,
                     ./images/desktop/ivanova2x.webp 2x
                   "
                   type="image/webp"
+                  media="(min-width: 769px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
-
+                <source
+                  srcset="
+                    ./images/desktop/ivanova.jpg 1x,
+                    ./images/desktop/ivanova.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 769px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
                 <img
-                  class="team-image"
                   srcset="
                     ./images/mobile/ivanova.jpg    1x,
                     ./images/mobile/ivanova2x.jpg  2x,
@@ -397,15 +431,10 @@
                     ./images/desktop/ivanova2x.jpg 2x
                   "
                   src="./images/mobile/ivanova.jpg"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   alt="фотография члена команды"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw"
                 />
               </picture>
-              <!-- <img
-                class="team-image"
-                src="./images/ivanova.jpg"
-                alt="фотография члена команды"
-              /> -->
               <h3 class="team-title">Ольга Иванова</h3>
               <p class="text">Frontend Developer</p>
               <ul class="social-list">
@@ -443,37 +472,72 @@
               <picture>
                 <source
                   srcset="
-                    ./images/mobile/shevchenko.webp    1x,
-                    ./images/mobile/shevchenko2x.webp  2x,
-                    ./images/tablet/shevchenko.webp    1x,
-                    ./images/tablet/shevchenko2x.webp  2x,
+                    ./images/mobile/shevchenko.webp   1x,
+                    ./images/mobile/shevchenko2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 480px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/shevchenko.jpg   1x,
+                    ./images/mobile/shevchenko2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 480px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/shevchenko.webp   1x,
+                    ./images/tablet/shevchenko2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 768px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/shevchenko.jpg 1x,
+                    ./images/tablet/shevchenko.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 768px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
                     ./images/desktop/shevchenko.webp   1x,
                     ./images/desktop/shevchenko2x.webp 2x
                   "
                   type="image/webp"
+                  media="(min-width: 769px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
-
+                <source
+                  srcset="
+                    ./images/desktop/shevchenko.jpg 1x,
+                    ./images/desktop/shevchenko.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 769px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
                 <img
-                  class="team-image"
                   srcset="
                     ./images/mobile/shevchenko.jpg    1x,
                     ./images/mobile/shevchenko2x.jpg  2x,
                     ./images/tablet/shevchenko.jpg    1x,
                     ./images/tablet/shevchenko2x.jpg  2x,
                     ./images/desktop/shevchenko.jpg   1x,
-                    ./images/desktop/shevchenko2x.jpg 2x,
-
+                    ./images/desktop/shevchenko2x.jpg 2x
                   "
                   src="./images/mobile/shevchenko.jpg"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   alt="фотография члена команды"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw"
                 />
               </picture>
-              <!-- <img
-                class="team-image"
-                src="./images/shevchenko.jpg"
-                alt="фотография члена команды"
-              /> -->
               <h3 class="team-title">Андрей Шевченко</h3>
               <p class="text">Marketing</p>
               <ul class="social-list">
@@ -511,37 +575,72 @@
               <picture>
                 <source
                   srcset="
-                    ./images/mobile/nikolaev.webp    1x,
-                    ./images/mobile/nikolaev2x.webp  2x,
-                    ./images/tablet/nikolaev.webp    1x,
-                    ./images/tablet/nikolaev2x.webp  2x,
+                    ./images/mobile/nikolaev.webp   1x,
+                    ./images/mobile/nikolaev2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 480px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/nikolaev.jpg   1x,
+                    ./images/mobile/nikolaev2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 480px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/nikolaev.webp   1x,
+                    ./images/tablet/nikolaev2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 768px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/nikolaev.jpg 1x,
+                    ./images/tablet/nikolaev.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 768px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="
                     ./images/desktop/nikolaev.webp   1x,
                     ./images/desktop/nikolaev2x.webp 2x
                   "
                   type="image/webp"
+                  media="(min-width: 769px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
-
+                <source
+                  srcset="
+                    ./images/desktop/nikolaev.jpg 1x,
+                    ./images/desktop/nikolaev.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 769px)"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
                 <img
-                  class="team-image"
                   srcset="
                     ./images/mobile/nikolaev.jpg    1x,
                     ./images/mobile/nikolaev2x.jpg  2x,
                     ./images/tablet/nikolaev.jpg    1x,
                     ./images/tablet/nikolaev2x.jpg  2x,
                     ./images/desktop/nikolaev.jpg   1x,
-                    ./images/desktop/nikolaev2x.jpg 2x,
-
+                    ./images/desktop/nikolaev2x.jpg 2x
                   "
                   src="./images/mobile/nikolaev.jpg"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   alt="фотография члена команды"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw"
                 />
               </picture>
-              <!-- <img
-                class="team-image"
-                src="./images/nikolaev.jpg"
-                alt="фотография члена команды"
-              /> -->
               <h3 class="team-title">Иван Николаев</h3>
               <p class="text">UI Designer</p>
               <ul class="social-list">
