@@ -59,6 +59,7 @@
             aria-expanded="false"
             aria-controls="menu-navigation"
             data-menu-button
+            aria-label="Кнопка меню"
           >
             <svg
               width="40"
@@ -84,7 +85,13 @@
       <section class="hero">
         <div class="hero-box">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button" data-open-modal>Заказать услугу</button>
+          <button
+            class="button"
+            data-open-modal
+            aria-label="Кнопка Заказать услугу"
+          >
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -795,7 +802,11 @@
             <b class="subscribe-title">Подпишитесь на рассылку</b>
             <div class="subscribtion">
               <input type="email" name="mail" id="mail" placeholder="E-mail" />
-              <button type="submit" class="button-footer">
+              <button
+                type="submit"
+                class="button-footer"
+                aria-label="Кнопка Подписаться"
+              >
                 Подписаться
                 <svg class="icon-send" width="24" height="24">
                   <use href="./images/sprite.svg#icon-send"></use>
@@ -875,10 +886,20 @@
               <a href="#" class="policy-terms">Условия договора</a>
             </label>
 
-            <button type="submit" class="submit-button">Отправить</button>
+            <button
+              type="submit"
+              class="submit-button"
+              aria-label="Кнопка Отправить форму"
+            >
+              Отправить
+            </button>
           </div>
         </form>
-        <button data-close-modal class="close-button">
+        <button
+          data-close-modal
+          class="close-button"
+          aria-label="Кнопка закрыть форму"
+        >
           <svg width="11" height="11">
             <use href="./images/sprite.svg#close"></use>
           </svg>
